@@ -1,0 +1,15 @@
+---- Linux ----
+Src         : http://www.de-mirrors.de/gnuftp/wdiff/wdiff-0.5.tar.gz
+Patched with: http://wdiff.progiciels-bpi.ca/showfile.html?name=ideas/courriel/various&index=1
+Patched with: -ltermcap entfernt (Makefile)
+configure   : ./configure --prefix External-osdep/wdiff/linux/0.5
+
+Zusammenbauen:
+cd External-osdep/wdiff/linux/0.5
+tar cjf ../0.5.tbz2 .
+
+
+---- Solaris ----
+Das Tool makeinfo ist auf verdi nicht verfuegbar. Deswegen diese ueberfluessigen
+Info-Targets aus Bauen und Installieren entsorgen und das info-Verzeichnis aus dem
+Linux kopieren.
